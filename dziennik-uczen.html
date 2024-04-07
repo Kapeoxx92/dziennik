@@ -9,10 +9,21 @@
 <body>
     <div id="header" onclick="startTime()">
         <h1>LIBRUS</h1>
-        <div id="txt"></div>
+        <div id="clock"></div>
     </div>
     <div id="pasek">
-
+        <div id="klasa">
+          <p>klasa</p>
+        </div>
+        <div id="uczen">
+          <p>uczeń</p>
+        </div>
+        <div id="nauczyciel">
+          <p>nauczyciele</p>
+        </div>
+        <div id="wiadomosci">
+          <p>wiadomości</p>
+        </div>
     </div>
     <div id="lewy">
 
@@ -26,15 +37,13 @@
           const today = new Date();
           let h = today.getHours();
           let m = today.getMinutes();
-          let s = today.getSeconds();
           m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML =  h + ":" + m + ":" +s;
+          document.getElementById('clock').innerHTML =  h + ":" + m;
           setTimeout(startTime, 1000);
         }
         
         function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          if (i < 10) {i = "0" + i};
           return i;
         }
         </script>

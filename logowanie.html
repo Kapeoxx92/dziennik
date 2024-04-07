@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>librus</title>
+    <link rel="stylesheet" href="logowanie.css">
+</head>
+<body>
+    <div id="header" onclick="startTime()">
+        <h1>LIBRUS</h1>
+        <div id="clock"></div>
+    </div>
+    <div id="main">
+        <h1>Zaloguj jako:</h1>
+        <label for="login"></label>
+        <form action= "dziennik-uczen.html">
+            <input type="submit" value="uczeń/rodzic">
+        </form>
+        <br>
+        <br>
+        <form action="dziennik-nauczyciel.html">
+            <input type="submit" value="nauczycziel/pracownik">
+        </form>
+    </div>
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          m = checkTime(m);
+          document.getElementById('clock').innerHTML =  h + ":" + m;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};
+          return i;
+        }
+        </script>
+</body>
+</html>

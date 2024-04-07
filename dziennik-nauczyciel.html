@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>librus</title>
+    <link rel="stylesheet" href="dziennik.css">
+</head>
+<body>
+    <div id="header" onclick="startTime()">
+        <h1>LIBRUS</h1>
+        <div id="clock"></div>
+    </div>
+    <div id="pasek">
+        <div id="klasa">
+          <p>klasa</p>
+        </div>
+        <div id="uczen">
+          <p>uczeń</p>
+        </div>
+        <div id="nauczyciel">
+          <p>nauczyciele</p>
+        </div>
+        <div id="wiadomosci">
+          <p>wiadomości</p>
+        </div>
+        <div id="rodzice">
+            <p>rodzice</p>
+        </div>
+    </div>
+    </div>
+    <div id="lewy">
+
+    </div>
+    <div id="prawy">
+
+    </div>
+
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          m = checkTime(m);
+          document.getElementById('clock').innerHTML =  h + ":" + m;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};
+          return i;
+        }
+        </script>
+</body>
+</html>

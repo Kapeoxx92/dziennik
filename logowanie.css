@@ -18,15 +18,6 @@ body {
     padding-right: 10px;
 }
 
-#pasek {
-    display: inline-flex;
-}
-
-#klasa {
-    background-color: blue;
+#main {
     text-align: center;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
 }
