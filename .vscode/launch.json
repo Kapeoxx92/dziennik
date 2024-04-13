@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/K1/Desktop/dziennik DB/dziennik",
-      "program": "c:/Users/K1/Desktop/dziennik DB/dziennik/build/Debug/outDebug",
+      "cwd": "d:/app/xampp/htdocs/dziennik",
+      "program": "d:/app/xampp/htdocs/dziennik/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
