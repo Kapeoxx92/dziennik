@@ -1,0 +1,25 @@
+MIN- SELECT MIN(ocena) FROM oceny;
+MIN- SELECT MAX(ocena) FROM oceny;
+SUM- SELECT SUM(ocena) FROM oceny;
+COUNT- SELECT COUNT(ocena) FROM oceny;
+AVG- SELECT AVG(ocena) FROM oceny;
+JOIN- SELECT * FROM uczen JOIN rodzice ON
+               uczen.imie = rodzice.imie_ojca;
+UNION/LIMIT- SELECT nazwisko FROM uczen
+             UNION
+             SELECT nazwisko FROM rodzice
+             ORDER BY nazwisko
+             LIMIT 5;
+HAVING- SELECT id, nazwisko
+        FROM uczen
+        GROUP BY nazwisko
+        HAVING id > 5
+        ORDER BY id DESC;
+LIKE- SELECT * FROM uczen
+      WHERE nazwisko LIKE 'M%';
+EXIST- SELECT * FROM uczen
+       WHERE EXISTS
+       (SELECT imie FROM rodzice WHERE imie LIKE 'S%');
+UPDATE- UPDATE uczen SET klasa = 'a' WHERE imie LIKE 'A%';
+ALTER- ALTER TABLE uczen ADD columnName datatype;
+GRANT- GRANT ALL PRIVILEGES ON dziennik TO anna;
