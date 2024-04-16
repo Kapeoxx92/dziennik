@@ -3,19 +3,20 @@ body {
     margin: 0;
 }
 #header {
-    display: block;
+    display: inline-flex;
     background-color: blue;
     margin-bottom: 10vh;
     text-align: left;
     padding: 7px;
     padding-left: 10px;
     color: white;
+    width: 100vw;
 }
 
 #clock {
-    color: white;
+    display: inline-flex;
     text-align: right;
-    padding-right: 10px;
+    color: white;
 }
 
 #pasek {
@@ -23,6 +24,42 @@ body {
 }
 
 #klasa {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+#uczen {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+#nauczyciel {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+#wiadomosci {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+#rodzice {
     background-color: blue;
     text-align: center;
     color: white;
