@@ -5,65 +5,87 @@ body {
 #header {
     display: inline-flex;
     background-color: blue;
-    margin-bottom: 10vh;
-    text-align: left;
-    padding: 7px;
-    padding-left: 10px;
-    color: white;
     width: 100vw;
 }
 
-#clock {
-    display: inline-flex;
-    text-align: right;
+#text {
+    text-align: left;
+    padding-left: 10px;
     color: white;
+}
+
+#clock {
+    text-align: right;
+    padding-left: 1650px;
+    color: white;
+    padding-top: 20px;
 }
 
 #pasek {
     display: inline-flex;
 }
 
-#klasa {
+.klasa {
     background-color: blue;
     text-align: center;
     color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
+    cursor: pointer;
+    padding: 5px;
+    width: 20vw;
 }
 
-#uczen {
-    background-color: blue;
-    text-align: center;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
+.klasa:hover {
+    background-color: rgb(0, 0, 190);
 }
 
-#nauczyciel {
+.uczen {
     background-color: blue;
     text-align: center;
     color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
+    cursor: pointer;
+    padding: 5px;
+    width: 20vw;
 }
 
-#wiadomosci {
-    background-color: blue;
-    text-align: center;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
+.uczen:hover {
+    background-color: rgb(0, 0, 190);
 }
 
-#rodzice {
+.nauczyciel {
     background-color: blue;
     text-align: center;
     color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 0px;
+    cursor: pointer;
+    padding: 5px;
+    width: 20vw;
+}
+
+.nauczyciel:hover {
+    background-color: rgb(0, 0, 190);
+}
+
+.wiadomosci {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 20vw;
+}
+
+.wiadomosci:hover {
+    background-color: rgb(0, 0, 190);
+}
+
+.rodzice {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 20vw;
+}
+
+.rodzice:hover {
+    background-color: rgb(0, 0, 190);
 }

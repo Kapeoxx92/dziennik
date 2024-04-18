@@ -5,34 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>librus</title>
     <link rel="stylesheet" href="dziennik.css">
+    <link rel="icon" href="librus icon.png">
 </head>
-<body>
+<body onload="startTime()">
     <div id="header">
-        <h1>LIBRUS</h1>
-        <div id="clock" onload="startTime()"></div>
+        <div id="text"><h1>LIBRUS</h1></div>
+        <div id="clock"></div>
     </div>
     <div id="pasek">
-        <div id="klasa">
-          <p>klasa</p>
-        </div>
-        <div id="uczen">
-          <p>uczeń</p>
-        </div>
-        <div id="nauczyciel">
-          <p>nauczyciele</p>
-        </div>
-        <div id="wiadomosci">
-          <p>wiadomości</p>
-        </div>
+        <a class="klasa" href="klasa.php">klasa</a>
+        <a class="uczen" href="uczen.php">uczeń</a>
+        <a class="nauczyciel" href="nauczyciel.php">nauczyciele</a>
+        <a class="wiadomosci" href="wiadomosci.php">wiadomości</a>
+        <a class="rodzice" onclick="access()">rodzice</a>        
     </div>
-    <div id="lewy">
-
-    </div>
-    <div id="prawy">
-
-    </div>
-
+  
     <script>
+      function access()
+      {
+        alert("Brak dostępu")
+      }
         function startTime() {
           const today = new Date();
           let h = today.getHours();
